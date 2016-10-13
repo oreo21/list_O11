@@ -10,7 +10,7 @@ void print_list(struct node *start){
 }
 
 struct node* insert_front(struct node *list, int front){
-  struct node *newNode = (struct node *)malloc(sizeof(struct node));
+  struct node *newNode = (struct node *)malloc(sizeof(struct node)); 
   newNode -> val = front;
   newNode -> next = list;
   return newNode;
@@ -47,7 +47,7 @@ int main(){
   printf("print_list(list): ");
   print_list(list);
   printf("insert_front(list, 5): ");
-  print_list(insert_front(list, 5)); // list = insert_front(list, i);
+  print_list(insert_front(list, 5));
   printf("free_list(list): ");
   free_list(list);
   print_list(list);
